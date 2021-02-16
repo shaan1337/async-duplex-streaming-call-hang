@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Request {
+}
+
+message Response {
+}
+
+service MyService {
+    rpc ReadWrite (stream Request) returns (stream Response);
+}
